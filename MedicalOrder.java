@@ -9,14 +9,10 @@ public class MedicalOrder extends OrderItem{
 
     }
 
-    public MedicalOrder(double dose, int duration){
-        this.dose = dose;
-        this.duration = duration;
-    }
 
-    // Constructor que inicializa campos heredados de OrderItem
+    
     public MedicalOrder(int orderId, Item item, int itemNumber, double dose, int duration){
-        super(orderId, item, itemNumber);
+        super(orderId, item, itemNumber);// campos heredados del padre(OrderItem)
         this.dose = dose;
         this.duration = duration;
     }

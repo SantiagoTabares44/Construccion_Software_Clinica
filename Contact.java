@@ -7,14 +7,9 @@ public class Contact extends Person{
     public Contact(){
 
     }
-    public Contact(String relation){
-            this.relation = relation;
-
-    }
-
-    // Constructor completo incluyendo campos de Person
+    
     public Contact(String firstName,String lastName, String document, String email, String cellphone, java.time.LocalDate birthday, String address, String relation){
-        super(firstName, lastName,document, email, cellphone, birthday, address);
+        super(firstName, lastName,document, email, cellphone, birthday, address);// Campos de la clase padre (Person)
         this.relation = relation;
     }
 
@@ -25,7 +20,6 @@ public class Contact extends Person{
     public void setRelation(String relation){
         this.relation = relation;
     }
-      
 
 
 }

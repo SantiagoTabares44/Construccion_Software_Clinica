@@ -16,7 +16,7 @@ public class Main {
         Policy policy = new Policy(company, 1001, true, java.time.LocalDate.of(2026,12,31));
 
         // Crear contact
-        Contact contact = new Contact("Astrid Acosta");
+        Contact contact = new Contact("Astrid","Acosta","43557795","AstridAcosta@gmail.com","3124566380",LocalDate.of(1972, 06, 26),"calle 01","Madre");
 
         // Crear patient (usando constructor extendido)
         Patient paciente_santiago = new Patient("Santiago","Tabares","1001015423","santiago.tabares44@correo.tdea.edu.co","3126456670",PatientBirth,"calle 41 Bsur #67",Gender.MASCULINO,contact,policy);
@@ -61,7 +61,9 @@ public class Main {
         System.out.println("Invoice total: " + invoice.getTotal() + ", copay: " + invoice.getCopay());
     
         System.out.println("-----INFORMACION CONTACTO DE EMERGENCIA-----");
-        System.out.println(contact.getRelation());
+        System.out.println("Nombre contacto: "+contact.getfirstName());
+        System.out.println("Documento: "+contact.getDocument());
+        System.out.println("Relacion: "+contact.getRelation());
         
     }
 }

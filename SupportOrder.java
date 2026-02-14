@@ -9,15 +9,10 @@ public class SupportOrder extends OrderItem {
 
     }
 
-    public SupportOrder(boolean specialRequired, Specialist specialist, double quantity){
-        this.specialRequired = specialRequired;
-        this.specialist = specialist;
-        this.quantity = quantity;
-    }
 
-    // Constructor que inicializa campos del padre
+    
     public SupportOrder(int orderId, Item item, int itemNumber, boolean specialRequired, Specialist specialist, double quantity){
-        super(orderId, item, itemNumber);
+        super(orderId, item, itemNumber);// campos del padre (OrderItem)
         this.specialRequired = specialRequired;
         this.specialist = specialist;
         this.quantity = quantity;

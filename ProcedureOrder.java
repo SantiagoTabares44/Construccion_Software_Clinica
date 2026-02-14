@@ -10,16 +10,8 @@ public class ProcedureOrder extends OrderItem{
 
     }   
 
-    public ProcedureOrder(double quantity, String frequency, Boolean specialRequired, Specialist specialist){
-        this.quantity = quantity;
-        this.frequency = frequency;
-        this.specialRequired = specialRequired;
-        this.specialist = specialist;
-    }
-
-    // Constructor que inicializa campos del padre
     public ProcedureOrder(int orderId, Item item, int itemNumber, double quantity, String frequency, Boolean specialRequired, Specialist specialist){
-        super(orderId, item, itemNumber);
+        super(orderId, item, itemNumber); //Llamado de la clase padre (OrderItem)
         this.quantity = quantity;
         this.frequency = frequency;
         this.specialRequired = specialRequired;
