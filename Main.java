@@ -1,6 +1,22 @@
 package clinica;
 
 import java.time.LocalDate;
+
+import clinica.santiagotabares.src.main.java.domain.models.ClinicalHistory;
+import clinica.santiagotabares.src.main.java.domain.models.ClinicalRecords;
+import clinica.santiagotabares.src.main.java.domain.models.Company;
+import clinica.santiagotabares.src.main.java.domain.models.Contact;
+import clinica.santiagotabares.src.main.java.domain.models.Gender;
+import clinica.santiagotabares.src.main.java.domain.models.Invoice;
+import clinica.santiagotabares.src.main.java.domain.models.Item;
+import clinica.santiagotabares.src.main.java.domain.models.ItemType;
+import clinica.santiagotabares.src.main.java.domain.models.Order;
+import clinica.santiagotabares.src.main.java.domain.models.OrderItem;
+import clinica.santiagotabares.src.main.java.domain.models.Patient;
+import clinica.santiagotabares.src.main.java.domain.models.Policy;
+import clinica.santiagotabares.src.main.java.domain.models.Role;
+import clinica.santiagotabares.src.main.java.domain.models.Specialist;
+import clinica.santiagotabares.src.main.java.domain.models.User;
 public class Main {
     
     public static void main(String[] args) {
